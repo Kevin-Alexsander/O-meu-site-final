@@ -1,0 +1,100 @@
+header h1{
+    text-align: center;
+}
+
+body{
+    background-color: green;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li{
+    font-size: 40px;
+    padding: 5px 5px;
+    background-color: red;
+    color:black;
+    border: 1px solid black;
+    transition: all ease 0.5s 0s ;
+}
+
+nav ul li:hover{
+    background-color: black;
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#botao{
+    border: 5px solid #153243;
+    background-color: #e8e8e8;
+    color: #153243;
+    padding: 8px 16px;
+    transition-duration: 0.4s;
+}
+
+#botao:hover{
+    border:none;
+    background-color: #153243;
+    color: #e8e8e8;
+    cursor: pointer;
+}
+
+nav ul li:active{
+    color: white;
+}
+
+a{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.links:link{
+    color: green;
+}
+
+.links:visited{
+    color: black;
+}
+
+#exemplo::selection{
+    background-color: blue;
+    color: red;
+}
+
+#titulo{
+    font-size: 50px;
+    animation-name: piscando;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes piscando{
+    0%{
+        color: blue;
+    }
+    10%{
+        color: green;
+    }
+    20%{
+        color: yellow;
+    }
+    30%{
+        color: red;
+    }
+    40%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        transform: translateY(300px) rotateY(360deg);
+    }
